@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "cosmosDBTrigger",
+      "direction": "in",
+      "name": "req",
+      "connectionStringSetting":"connectionString",
+      "createLeaseCollectionIfNotExists":"true",
+      "databaseName":"ToDoList",
+      "collectionName":"Items",
+      "methods": [
+        
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
